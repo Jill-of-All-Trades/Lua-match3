@@ -180,7 +180,7 @@ function Board:new(rows, cols, gems)
         return changes_made
     end
 
-    -- Move crystal
+    -- Swap gems
     function obj:move(x_from, y_from, x_to, y_to)
         -- check out of bound
         if x_from < 0 or x_from >= self.cols or y_from < 0 or y_from >= self.rows or x_to < 0 or x_to >= self.cols or y_to < 0 or y_to >= self.rows then
